@@ -35,7 +35,6 @@ int main(void)
     //	Initializations
 	DIO_INIT();
 	Init_Ext_INT0();							
-	OCR1A_Write(0x24);
 	OCR1A_Write(F_CPU/Prescaler);		
 	TIMER1_COMPA_Callback(Timer_Handler);
 	Timer_1_Interrupt_Enable();
